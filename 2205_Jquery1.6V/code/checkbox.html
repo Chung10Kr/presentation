@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    V 3.5
+    <input type="checkbox" id="cb1" />
+
+    <button onclick="ePrint();return false;">출력</button>
+    <button onclick="eCheckAttr();return false;">ATTR Check하기</button>
+    <button onclick="eCheckRemoveAttr();return false;">remove ATTR 하기</button>
+    <button onclick="eCheckProp(true);return false;">PROP Check하기</button>
+    <button onclick="eCheckProp(false);return false;">PROP UnCheck하기</button>
+  </body>
+  <script>
+    function eCheckAttr() {
+      $("#cb1").attr("checked", "checked");
+    }
+    function eCheckRemoveAttr() {
+      $("#cb1").removeAttr("checked");
+    }
+    function eCheckProp(bStatus) {
+      $("#cb1").prop("checked", bStatus);
+    }
+    function ePrint() {
+      console.log("===================================");
+      console.log(`attr -> ${$("#cb1").attr("checked")}`);
+      console.log(`prop -> ${$("#cb1").prop("checked")}`);
+      console.log("===================================");
+    }
+  </script>
+</html>

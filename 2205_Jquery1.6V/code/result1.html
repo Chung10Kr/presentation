@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    V 3.5
+    <input type="checkbox" class="cb1" value="1" />
+    <input type="checkbox" class="cb1" value="2" />
+    <input type="checkbox" class="cb1" value="3" />
+    <input type="checkbox" class="cb1" value="4" />
+    <input type="checkbox" class="cb1" value="5" />
+    <input type="checkbox" class="cb1" value="6" />
+    <input type="checkbox" class="cb1" value="7" />
+    <input type="checkbox" class="cb1" value="8" />
+    <input type="checkbox" class="cb1" value="9" />
+
+    <button onclick="ePrint();return false;">출력</button>
+    <button onclick="ePrint();return false;">출력2</button>
+  </body>
+  <script>
+    function ePrint() {
+      var result = [];
+      $(".cb1").map(function (i, n) {
+        if ($(n).prop("checked")) {
+          result.push($(n).val());
+        }
+      });
+      console.log(result);
+    }
+
+    function ePrint2() {
+      var result = $(".cb1:checked").val();
+      console.log(result);
+    }
+  </script>
+</html>

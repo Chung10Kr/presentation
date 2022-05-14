@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="./jquery-1.10.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    V 1.12
+    <input type="checkbox" class="cb1" />
+
+    <button id="eBtn" onclick="ePrint();return false;">Print</button>
+  </body>
+  <script>
+    function ePrint() {
+      $(".cb1").map(function (i, b) {
+        console.log($(b).attr("checked"));
+      });
+      return false;
+      console.log("===================================");
+      console.log($("#cb1").attr("checked"));
+      console.log($("#cb1").prop("checked"));
+      console.log("===================================");
+    }
+  </script>
+</html>

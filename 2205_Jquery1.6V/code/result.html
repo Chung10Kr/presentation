@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    V 3.5
+    <input type="checkbox" id="cb1" />
+
+    <button onclick="ePrint();return false;">출력</button>
+  </body>
+  <script>
+    function ePrint() {
+      console.log("===================================");
+      console.log(`prop -> ${$("#cb1").prop("checked")}`);
+      console.log(`is -> ${$("#cb1").is(":checked")}`);
+      console.log("===================================");
+    }
+  </script>
+</html>
