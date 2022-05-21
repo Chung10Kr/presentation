@@ -40,7 +40,7 @@ npm init -y
 ### babel 설치
 
 ```bash
-npm i -D babel/core babel/cli
+npm i -D @babel/core @babel/cli
 # 개발의존성으로 설치하는 이유는 Babel은 애플리케이션 실행 시에 필요한 것이 아니라
 # 빌드시에만 필요하기 때문입니다.
 # babel/core = Babel을 사용할떄 필요한 패키지
