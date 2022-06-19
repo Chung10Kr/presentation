@@ -11,16 +11,12 @@
   </head>
   <body>
     V 1.12
-    <input type="checkbox" class="cb1" />
+    <input type="checkbox" id="cb1" checked />
 
     <button id="eBtn" onclick="ePrint();return false;">Print</button>
   </body>
   <script>
     function ePrint() {
-      $(".cb1").map(function (i, b) {
-        console.log($(b).attr("checked"));
-      });
-      return false;
       console.log("===================================");
       console.log($("#cb1").attr("checked"));
       console.log($("#cb1").prop("checked"));

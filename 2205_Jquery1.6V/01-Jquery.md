@@ -78,4 +78,3 @@ $.ajax({
 
 [참고 - Blog](https://s-core.co.kr/insight/view/%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%ACjquery%EC%9D%98-%ED%98%84%EC%9E%AC%EC%99%80-%EB%AF%B8%EB%9E%98/)
 
-# 오늘의 발표 주제 = 웹, 모바일의 Jquery 버전 차이

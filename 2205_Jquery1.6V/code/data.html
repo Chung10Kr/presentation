@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" value="crlee" id="userId" 
+           data-old-gender="남자"
+           data-new-gender="여자"
+           ft-user-id="fbwms"
+    /> 
+  </body>
+  <script>
+    console.log("JAVASCRIPT =====")
+    var userId = document.getElementById("userId");
+    userId.dataset.oldNm = "홍길동";
+    userId.dataset.oldage = 30;
+    console.log( userId.dataset.oldGender );
+
+    console.log("JQUERY =====")
+    $("#userId").attr("data-new-nm","이순신");
+    console.log( $("#userId").attr("data-new-gender") );
+
+    console.log("=====")
+    console.log( userId.dataset );
+    console.log( $("#userId").attr("ft-user-id") );
+    // % data-* 형식을 따르지 않아도 Jquery Attr()로 속성 읽을 수는 있지만 dataset속성을 통해 읽을 수 없다.
+  </script>
+</html>
