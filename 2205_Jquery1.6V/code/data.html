@@ -19,17 +19,20 @@
   <script>
     console.log("JAVASCRIPT =====")
     var userId = document.getElementById("userId");
-    userId.dataset.oldNm = "홍길동";
-    userId.dataset.oldage = 30;
-    console.log( userId.dataset.oldGender );
+    userId.dataset.oldNm = "홍길동"; // Data 속성 추가
+    userId.dataset.oldage = 30;    // Data 속성 추가
+    console.log( userId.dataset.oldGender ); // Data 속성 읽기
 
     console.log("JQUERY =====")
-    $("#userId").attr("data-new-nm","이순신");
-    console.log( $("#userId").attr("data-new-gender") );
+    $("#userId").attr("data-new-nm","이순신"); // Data 속성 추가
+    console.log( $("#userId").attr("data-new-gender") ); // Data 속성 읽기
 
     console.log("=====")
+    userId.dataset.ftUserName = "crlee";
     console.log( userId.dataset );
     console.log( $("#userId").attr("ft-user-id") );
+    console.log( $("#userId").attr("ft-user-age" , 30) );
+    console.log( userId.dataset );
     // % data-* 형식을 따르지 않아도 Jquery Attr()로 속성 읽을 수는 있지만 dataset속성을 통해 읽을 수 없다.
   </script>
 </html>
